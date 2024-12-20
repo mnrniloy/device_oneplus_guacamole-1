@@ -11,14 +11,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from guacamole device
 $(call inherit-product, device/oneplus/guacamole/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common BLISS stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+# Bliss Flags
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_guacamole
+PRODUCT_NAME := bliss_guacamole
 PRODUCT_DEVICE := guacamole
 PRODUCT_MANUFACTURER := OnePlus
-PRODUCT_MODEL := GM1911
+PRODUCT_MODEL := GM1917
 PRODUCT_BRAND := OnePlus
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
