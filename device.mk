@@ -8,6 +8,11 @@
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
+# AlertSlider
+PRODUCT_PACKAGES += \
+    SystemUIOverlay \
+    AlertSliderOverlay
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_platform_info.xml \
