@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget
 
+# Wifi Overlay
+PRODUCT_PACKAGES += \
+    OnePlus7ProWifiOverlay
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
 
